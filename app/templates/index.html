@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>@{{ candidate.handle }}</h1>
+    {% for tweet in tweets %}
+    <div><p>{{ tweet.timestamp }}:&nbsp;{{ tweet.body }}</p></div>
+    {% endfor %}
+{% endblock %}

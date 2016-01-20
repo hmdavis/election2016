@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Candidate Tweets</title>
+    {% endif %}
+</head>
+<body>
+    <div>Candidate Tweets: Temporary Nav Bar</div>
+    <br>
+    {% block content %}{% endblock %}
+</body>
+</html>

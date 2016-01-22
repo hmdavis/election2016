@@ -124,7 +124,7 @@ all_tweets = timefreq.load_tweets_by_time()
 
 tokenizer = RegexpTokenizer(r'[\w#@\']+')
 for candidate, tweets in all_tweets.iteritems():
-    tweets = timefreq.get_tweets_by_time(all_tweets, candidate, 2016, 1)
+    tweets = timefreq.get_tweets_by_time(all_tweets, candidate, 2015)
     hashtags = defaultdict(int)
     users = defaultdict(int)
     states = defaultdict(int)

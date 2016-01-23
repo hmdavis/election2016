@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>@{{ candidate.handle }}</h1>
-    {% for tweet in tweets %}
-    <div><p>{{ tweet.timestamp }}:&nbsp;{{ tweet.body }}</p></div>
+    {% for candidate in candidates %}
+    <div class="starter-template">
+        {% set redirect = "http://127.0.0.1:5000/tweets/" + candidate.handle %}
+        {% set img_path = "/static/images/" + candidate.handle + ".jpg" %}
+        <a href={{ redirect }}>
+        <img class="img-circle" src="{{ img_path }}" width="140" height="140">
+        </a>
+        <h2>@{{ candidate.handle }}</h2>
+    </div>
     {% endfor %}
 {% endblock %}

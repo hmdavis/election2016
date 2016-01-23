@@ -1,6 +1,5 @@
 from app import db
 
-
 class Candidate(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     handle = db.Column(db.String(64), index=True, unique=True)
@@ -13,7 +12,8 @@ class Candidate(db.Model):
 
 class Tweet(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    body = db.Column(db.String(140))
+    tweetid = db.Column(db.BigInteger)
+    body = db.Column(db.String(140, convert_unicode=True))
     timestamp = db.Column(db.DateTime)
     candidate_id = db.Column(db.Integer, db.ForeignKey('candidate.id'))
 

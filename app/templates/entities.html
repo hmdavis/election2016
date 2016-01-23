@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>@{{ candidate.handle }}</h1>
+    <h2>{{ date }}</h2>
+    {% for key, value in entities.iteritems() %}
+        <h2>{{ key }}</h2>
+        <ul class="list-group">
+        {% for entity in value %}
+            <li class="list-group-item">{{ entity }}</li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>@{{ candidate.handle }}</h1>
+    <h2>{{ date }}</h2>
+    {% if tweets|length != 0 %}
+        {% for tweet in tweets %}
+        <div><p><b>{{ tweet.timestamp }}:</b>&nbsp;{{ tweet.body }}</p></div>
+        {% endfor %}
+    {% else %}
+        <div><p>No tweets found for this date</p></div>
+    {% endif %}
+{% endblock %}

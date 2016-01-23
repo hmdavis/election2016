@@ -3,10 +3,10 @@
     <h1>@{{ candidate.handle }}</h1>
     <h2>{{ date }}</h2>
     {% for key, value in entities.iteritems() %}
-        <h2>{{ key }}</h2>
+        <h3>{{ key }}</h3>
         <ul class="list-group">
         {% for entity in value %}
-            <li class="list-group-item">{{ entity }}</li>
+            <li class="list-group-item">[{{ entity[1] }}] {{ entity[0] }}</li>
         {% endfor %}
         </ul>
     {% endfor %}

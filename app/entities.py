@@ -125,7 +125,7 @@ def get_entities(tweets):
     users = defaultdict(int)
     states = defaultdict(int)
     entities = {}
-    tf = defaultdict(float)
+    tf = defaultdict(int)
     df = defaultdict(float)
     n = 0.0
     for tweet in tweets:

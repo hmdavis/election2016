@@ -73,4 +73,5 @@ def entities(handle, year=None, month=None, day=None):
     return render_template('entities.html',
                            title='Candidate Entities',
                            candidate=candidate,
+                           date=date,
                            entities=entities)

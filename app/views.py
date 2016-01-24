@@ -37,12 +37,17 @@ def get_tweets_by_date(handle, year, month, day):
 @app.route('/index')
 def index():
     candidates = Candidate.query.all()
-    print os.path.dirname(os.path.realpath(__file__))
     return render_template('index.html',
                            title='Candidates',
                            candidates=candidates,
                            basedir=basedir)
 
+@app.route('/candidate/<handle>')
+def candidate(handle):
+    candidate = Candidate.query.filter_by(handle=handle).first()
+    return render_template('candidate.html',
+                           title=handle,
+                           candidate=candidate)
 
 @app.route('/tweets/<handle>')
 @app.route('/tweets/<handle>/<year>')

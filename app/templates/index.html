@@ -2,7 +2,7 @@
 {% block content %}
     {% for candidate in candidates %}
     <div class="starter-template">
-        {% set redirect = "http://127.0.0.1:5000/tweets/" + candidate.handle %}
+        {% set redirect = "/candidate/" + candidate.handle %}
         {% set img_path = "/static/images/" + candidate.handle + ".jpg" %}
         <a href={{ redirect }}>
         <img class="img-circle" src="{{ img_path }}" width="140" height="140">

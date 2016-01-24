@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="inner cover">
+    {% set img_path = "/static/images/" + candidate.handle + ".jpg" %}
+    <img class="img-circle" src="{{ img_path }}" width="140" height="140">
+    <h1 class="cover-heading">{{ candidate.handle }}</h1>
+    <p class="lead">
+        {% set tweets = "/tweets/" + candidate.handle %}
+        {% set entities = "/entities/" + candidate.handle %}
+        <a href={{ tweets }} class="btn btn-lg btn-default">Tweets</a>
+        <a href={{ entities }} class="btn btn-lg btn-default">Entities</a>
+    </p>
+</div>
+{% endblock %}

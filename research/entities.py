@@ -124,7 +124,7 @@ all_tweets = timefreq.load_tweets_by_time()
 
 tokenizer = RegexpTokenizer(r'[\w#@\']+')
 for candidate, tweets in all_tweets.iteritems():
-    tweets = timefreq.get_tweets_by_time(all_tweets, candidate, 2015)
+    tweets = timefreq.get_tweets_by_time(all_tweets, candidate, 2016, 01)
     hashtags = defaultdict(int)
     users = defaultdict(int)
     states = defaultdict(int)
@@ -144,18 +144,19 @@ for candidate, tweets in all_tweets.iteritems():
                     continue
                 if token.startswith('@'):
                     users[token.replace("'s", "")] += 1
-                if token.startswith('#'):
+                elif token.startswith('#'):
                     hashtags[token] += 1
-                if token.upper() in abbrev_to_state or token.title() in state_to_abbrev:
+                elif token.upper() in abbrev_to_state or token.title() in state_to_abbrev:
                     if token.title() in state_to_abbrev:
                         name = token.title()
                     else:
                         name = abbrev_to_state[token.upper()].title()
                     states[name] += 1
-                if token not in seen:
-                    seen.add(token)
-                    df[token] += 1
-                tf[token] += 1
+                else:
+                    if token not in seen:
+                        seen.add(token)
+                        df[token] += 1
+                    tf[token] += 1
 
     print "\tFound %s tweets..." % n
     print "\tTokens:"

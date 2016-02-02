@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b308bddf-f4ce-47e1-9f51-503320b6dab2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/BernieSanders_tweets.csv" afterPath="$PROJECT_DIR$/research/history/BernieSanders_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/CarlyFiorina_tweets.csv" afterPath="$PROJECT_DIR$/research/history/CarlyFiorina_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/ChrisChristie_tweets.csv" afterPath="$PROJECT_DIR$/research/history/ChrisChristie_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/HillaryClinton_tweets.csv" afterPath="$PROJECT_DIR$/research/history/HillaryClinton_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/JebBush_tweets.csv" afterPath="$PROJECT_DIR$/research/history/JebBush_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/RandPaul_tweets.csv" afterPath="$PROJECT_DIR$/research/history/RandPaul_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/RealBenCarson_tweets.csv" afterPath="$PROJECT_DIR$/research/history/RealBenCarson_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/marcorubio_tweets.csv" afterPath="$PROJECT_DIR$/research/history/marcorubio_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/realDonaldTrump_tweets.csv" afterPath="$PROJECT_DIR$/research/history/realDonaldTrump_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/history/tedcruz_tweets.csv" afterPath="$PROJECT_DIR$/research/history/tedcruz_tweets.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/oldest.txt" afterPath="$PROJECT_DIR$/research/oldest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/research/entities.py" afterPath="$PROJECT_DIR$/research/entities.py" />
     </list>
     <ignored path="election2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +26,7 @@
       <file leaf-file-name="tweets.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/tweets.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding />
             </state>
@@ -101,21 +90,31 @@
       <file leaf-file-name="candidate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/candidate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="history.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/research/history.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24539877">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/research/entities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51934826">
+              <caret line="137" column="22" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,7 +152,6 @@
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/app/resources/css/starter-template.css" />
         <option value="$PROJECT_DIR$/app/static/css/starter-template.css" />
-        <option value="$PROJECT_DIR$/research/entities.py" />
         <option value="$PROJECT_DIR$/app/entities.py" />
         <option value="$PROJECT_DIR$/app/templates/entities.html" />
         <option value="$PROJECT_DIR$/app/templates/index.html" />
@@ -161,6 +159,7 @@
         <option value="$PROJECT_DIR$/app/templates/candidate.html" />
         <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/templates/tweets.html" />
+        <option value="$PROJECT_DIR$/research/entities.py" />
       </list>
     </option>
   </component>
@@ -195,8 +194,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,7 +297,7 @@
       <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.history">
+  <component name="RunManager" selected="Python.entities">
     <configuration default="false" name="db_load" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -479,9 +478,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.history" />
-        <item index="1" class="java.lang.String" itemvalue="Python.db_load" />
-        <item index="2" class="java.lang.String" itemvalue="Python.entities" />
+        <item index="0" class="java.lang.String" itemvalue="Python.entities" />
+        <item index="1" class="java.lang.String" itemvalue="Python.history" />
+        <item index="2" class="java.lang.String" itemvalue="Python.db_load" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +506,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33802816" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33716476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.394636" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -824,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/research/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.70254403">
-          <caret line="122" column="43" selection-start-line="122" selection-start-column="43" selection-end-line="122" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/entities.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -887,7 +879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/tweets.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
@@ -895,7 +887,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/candidate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
@@ -905,17 +897,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.244898">
           <caret line="3948" column="0" selection-start-line="3948" selection-start-column="0" selection-end-line="3948" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/research/history.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24539877">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/research/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51934826">
+          <caret line="137" column="22" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
